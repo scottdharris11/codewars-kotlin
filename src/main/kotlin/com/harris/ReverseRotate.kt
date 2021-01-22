@@ -1,6 +1,6 @@
 package com.harris
 
-import kotlin.math.pow;
+import kotlin.math.pow
 import kotlin.math.roundToInt
 
 fun revRot(nums:String, sz:Int): String {
