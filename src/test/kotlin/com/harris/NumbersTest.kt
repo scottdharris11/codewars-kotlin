@@ -31,4 +31,12 @@ class NumbersTest {
         assertEquals("[103, 107]", Arrays.toString(gap(4, 100, 110)))
         assertEquals("[]", Arrays.toString(gap(6, 100, 110)))
     }
+
+    @Test
+    fun `Prime Step Test`() {
+        assertEquals("[101, 103]", Arrays.toString(step(2, 100, 110)))
+        assertEquals("[103, 107]", Arrays.toString(step(4, 100, 110)))
+        assertEquals("[101, 107]", Arrays.toString(step(6, 100, 110)))
+    }
+
 }
