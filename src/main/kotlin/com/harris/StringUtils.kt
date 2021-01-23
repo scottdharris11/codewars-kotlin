@@ -11,3 +11,13 @@ fun repeatStr(r: Int, str: String) : String {
     repeat( r ) { sb.append( str ) }
     return sb.toString()
 }
+
+fun findShort(s: String): Int {
+    var shortest = Integer.MAX_VALUE
+    s.split( " " ).forEach { word ->
+        if ( word.length < shortest ) {
+            shortest = word.length
+        }
+    }
+    return shortest
+}

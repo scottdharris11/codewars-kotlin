@@ -24,4 +24,9 @@ class StringUtilsTest {
     @Test fun `Repeat 0 Empty`() {
         assertEquals("", repeatStr(0, "kata"))
     }
+
+    @Test fun `Find Shortest Word`() {
+        assertEquals(3, findShort("bitcoin take over the world maybe who knows perhaps"))
+        assertEquals(3, findShort("turns out random test cases are easier than writing out basic ones"))
+    }
 }
